@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pluto</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-    <!--  <link rel="stylesheet" href="style.css"> -->
+    <!-- <script src="App.js"></script> -->
+    <!--     <link rel="stylesheet" href="style.css"> -->
 </head>
 
 
@@ -121,32 +122,92 @@
                 <div id="smartphone-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
                     <!-- Smartphone items will be appended here -->
                 </div>
-                <div class="bg-white p-4 rounded shadow-md">
-                    <h2 class="text-xl font-bold mb-4">Add a New Smartphone</h2>
-                    <form id="add-smartphone-form">
-                        <div class="mb-4">
-                            <label class="block text-gray-700 text-sm font-bold mb-2">Model:</label>
-                            <input type="text" id="model"
-                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                required>
+
+                <div class="flex font-serif">
+                    <div class="flex-none w-52 relative">
+                        <img src="/dogtooth-style-jacket.jpg" alt=""
+                            class="absolute inset-0 w-full h-full object-cover rounded-lg" loading="lazy" />
+                    </div>
+                    <form class="flex-auto p-6">
+                        <div class="flex flex-wrap items-baseline">
+                            <h1 class="w-full flex-none mb-3 text-2xl leading-none text-slate-900">
+                                DogTooth Style Jacket
+                            </h1>
+                            <div class="flex-auto text-lg font-medium text-slate-500">
+                                $350.00
+                            </div>
+                            <div class="text-xs leading-6 font-medium uppercase text-slate-500">
+                                In stock
+                            </div>
                         </div>
-                        <div class="mb-4">
-                            <label class="block text-gray-700 text-sm font-bold mb-2">Price:</label>
-                            <input type="number" id="price"
-                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                required>
+                        <div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
+                            <div class="space-x-1 flex text-sm font-medium">
+                                <label>
+                                    <input class="sr-only peer" name="size" type="radio" value="xs" checked />
+                                    <div
+                                        class="w-7 h-7 rounded-full flex items-center justify-center text-slate-500 peer-checked:bg-slate-100 peer-checked:text-slate-900">
+                                        XS
+                                    </div>
+                                </label>
+                                <label>
+                                    <input class="sr-only peer" name="size" type="radio" value="s" />
+                                    <div
+                                        class="w-7 h-7 rounded-full flex items-center justify-center text-slate-500 peer-checked:bg-slate-100 peer-checked:text-slate-900">
+                                        S
+                                    </div>
+                                </label>
+                                <label>
+                                    <input class="sr-only peer" name="size" type="radio" value="m" />
+                                    <div
+                                        class="w-7 h-7 rounded-full flex items-center justify-center text-slate-500 peer-checked:bg-slate-100 peer-checked:text-slate-900">
+                                        M
+                                    </div>
+                                </label>
+                                <label>
+                                    <input class="sr-only peer" name="size" type="radio" value="l" />
+                                    <div
+                                        class="w-7 h-7 rounded-full flex items-center justify-center text-slate-500 peer-checked:bg-slate-100 peer-checked:text-slate-900">
+                                        L
+                                    </div>
+                                </label>
+                                <label>
+                                    <input class="sr-only peer" name="size" type="radio" value="xl" />
+                                    <div
+                                        class="w-7 h-7 rounded-full flex items-center justify-center text-slate-500 peer-checked:bg-slate-100 peer-checked:text-slate-900">
+                                        XL
+                                    </div>
+                                </label>
+                            </div>
                         </div>
-                        <div class="mb-4">
-                            <label class="block text-gray-700 text-sm font-bold mb-2">Description:</label>
-                            <textarea id="description"
-                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                required></textarea>
+                        <div class="flex space-x-4 mb-5 text-sm font-medium">
+                            <div class="flex-auto flex space-x-4 pr-4">
+                                <button
+                                    class="flex-none w-1/2 h-12 uppercase font-medium tracking-wider bg-slate-900 text-white"
+                                    type="submit">
+                                    Buy now
+                                </button>
+                                <button
+                                    class="flex-none w-1/2 h-12 uppercase font-medium tracking-wider border border-slate-200 text-slate-900"
+                                    type="button">
+                                    Add to bag
+                                </button>
+                            </div>
+                            <button
+                                class="flex-none flex items-center justify-center w-12 h-12 text-slate-300 border border-slate-200"
+                                type="button" aria-label="Like">
+                                <svg width="20" height="20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                                </svg>
+                            </button>
                         </div>
-                        <button type="submit"
-                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Add
-                            Smartphone</button>
+                        <p class="text-sm text-slate-500">
+                            Free shipping on all continental US orders.
+                        </p>
                     </form>
                 </div>
+
+
             </div>
             <script src="App.js"></script>
         </body>

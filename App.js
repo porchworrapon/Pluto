@@ -17,9 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentBuyIndex = null;
 
     const smartphones = [
-        { model: 'iPhone 12', price: 600, description: 'A great phone with a powerful chip and great camera.' },
-        { model: 'Samsung Galaxy S20', price: 500, description: 'A high-end smartphone with an amazing display.' },
-        { model: 'Google Pixel 5', price: 450, description: 'A solid phone with a fantastic camera and clean software.' }
+        { model: 'xx1', price: 600, description: 'A great phone with a powerful chip and great camera.' },
+        { model: 'xxx2', price: 500, description: 'A high-end smartphone with an amazing display.' },
+        { model: 'xxxx3', price: 450, description: 'A solid phone with a fantastic camera and clean software.' }
     ];
 
     const renderSmartphones = () => {
@@ -92,9 +92,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const descriptionInput = document.getElementById('description');
 
     const smartphones = [
-        { model: 'iPhone 15', price: 600, description: 'A great phone with a powerful chip and great camera.' },
-        { model: 'Samsung Galaxy S24', price: 500, description: 'A high-end smartphone with an amazing display.' },
-        { model: 'Google Pixel 8', price: 450, description: 'A solid phone with a fantastic camera and clean software.' }
+        { model: 'xx1', price: 600, description: 'A great phone with a powerful chip and great camera.' },
+        { model: 'xxx2', price: 500, description: 'A high-end smartphone with an amazing display.' },
+        { model: 'xxxx3', price: 450, description: 'A solid phone with a fantastic camera and clean software.' }
     ];
 
     const renderSmartphones = () => {
